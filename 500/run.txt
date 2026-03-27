@@ -1,0 +1,7 @@
+Pure reflection
+javac --enable-preview --release=26 Main.java
+java --enable-preview Main
+
+Unsafe
+javac --enable-preview --release=26 FinalUnsafe.java
+java --enable-preview FinalUnsafe

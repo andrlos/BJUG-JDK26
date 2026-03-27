@@ -1,0 +1,2 @@
+javac --enable-preview --release=26 LazyDemo.java
+java --enable-preview LazyDemo

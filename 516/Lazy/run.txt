@@ -1,0 +1,3 @@
+/usr/lib/jvm/java-26-openjdk-26.0.0.0.32-0.1.ea.rolling.el8.portable.jdk.x86_64.tarxz/bin/java -XX:AOTCacheOutput=main.aot -Xlog:aot,cds -jar --enable-preview LazyDemo.jar
+hyperfine --warmup 5 '/usr/lib/jvm/java-26-openjdk-26.0.0.0.32-0.1.ea.rolling.el8.portable.jdk.x86_64.tarxz/bin/java -XX:AOTCache=main.aot -jar --enable-preview LazyDemo.jar'
+hyperfine --warmup 5 '/usr/lib/jvm/java-26-openjdk-26.0.0.0.32-0.1.ea.rolling.el8.portable.jdk.x86_64.tarxz/bin/java -XX:AOTCache=main.aot -jar --enable-preview LazyDemo.jar'

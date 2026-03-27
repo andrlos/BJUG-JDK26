@@ -1,0 +1,8 @@
+javac -cp gen Main.java
+javac gen/demo/gen/*
+
+jar --create --file demo.jar -C gen . Main.class
+java -XX:+UseZGC -XX:AOTCacheOutput=main.aot -Xlog:aot=info -cp demo.jar Main
+
+hyperfine --warmup 5 'java -XX:+UseZGC -cp demo.jar Main'
+hyperfine --warmup 5 'java -XX:+UseZGC -XX:AOTCache=main.aot -Xlog:aot=info -cp demo.jar Main'

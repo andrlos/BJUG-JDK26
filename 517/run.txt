@@ -1,0 +1,2 @@
+javac --enable-preview --release=26 Http3ParallelDemo.java
+java --enable-preview Http3ParallelDemo

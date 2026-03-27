@@ -1,0 +1,8 @@
+Old
+javac TraditionalThreadsDemo.java
+java TraditionalThreadsDemo
+
+New
+javac --enable-preview --release=26 StructuredConcurrencyDemo.java
+java --enable-preview StructuredConcurrencyDemo
+

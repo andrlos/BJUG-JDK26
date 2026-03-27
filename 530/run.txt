@@ -1,0 +1,2 @@
+javac --enable-preview --release=26 Jep530Demo.java
+java --enable-preview Jep530Demo
